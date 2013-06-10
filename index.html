@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Challenge</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        div{
+           text-align:center;
+        }
+        .xtablegrid-wrapper .bulle{
+            background-color: #CBCFD4!important;
+        }
+    </style>
+  </head>
+  <body>
+      <h2>Exemple 1: (Default)</h2>
+      <blockquote>$(".xtablegrid-wrapper").xtablegrid();</blockquote>
+      <div class="xtablegrid-wrapper">
+          <div class="item">
+              <div class="box">
+                Texte 1
+              </div>
+              <div class="bulle">
+                Info 1
+              </div>
+          </div>
+          <div class="item">
+              <div class="box">
+                Texte 2
+              </div>
+              <div class="bulle">
+                Info 2
+              </div>
+          </div>
+          <div class="item">
+              <div class="box">
+                Texte 3
+              </div>
+              <div class="bulle">
+                Info 3
+              </div>
+          </div>
+          <div class="item">
+              <div class="box">
+                Texte 4
+              </div>
+              <div class="bulle">
+                Info 4
+              </div>
+          </div>
+          <div class="item">
+              <div class="box">
+                  <img src="./thumb_wp.jpg">
+              </div>
+              <div class="bulle">
+                  <i>WordPress</i>
+              </div>
+          </div>
+          <div class="item">
+              <div class="box">
+                Texte 6
+              </div>
+              <div class="bulle">
+                Info 6
+              </div>
+          </div>
+          <div class="item">
+              <div class="box">
+                  <img src="./thumb_jquery.jpg">
+              </div>
+              <div class="bulle">
+                  <b>jQuery</b>
+              </div>
+          </div>
+          <div class="item">
+              <div class="box">
+                Texte 8
+              </div>
+              <div class="bulle">
+                Info 8
+              </div>
+          </div>
+          <div class="item">
+              <div class="box">
+                Texte 9
+              </div>
+              <div class="bulle">
+                Info 9
+              </div>
+          </div>
+      </div>
+      <div style="clear:both;">&nbsp;</div>
+      <hr />
+      <h2>Exemple 2 (Custom)</h2>
+      <blockquote>
+          $(".z").xtablegrid({
+                width: 200,
+                itemsPerLine: 2,
+                itemClassName : "t",
+                boxClassName : "a",
+                bullClassName : "e"
+            });
+      </blockquote>
+      <div class="z">
+          <div class="t">
+              <div class="a">
+                Texte 1
+              </div>
+              <div class="e">
+                Info 1
+              </div>
+          </div>
+          <div class="t">
+              <div class="a">
+                Texte 2
+              </div>
+              <div class="e">
+                Info 2
+              </div>
+          </div>
+          <div class="t">
+              <div class="a">
+                Texte 3
+              </div>
+              <div class="e">
+                Info 3
+              </div>
+          </div>
+
+          <div class="t">
+              <div class="a">
+                Texte 4
+              </div>
+              <div class="e">
+                Info 4
+              </div>
+          </div>
+      </div>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="./xtablegrid.js"></script>
+      <script type="text/javascript">
+        jQuery(document).ready(function($){
+            $(".xtablegrid-wrapper").xtablegrid();
+            
+            $(".z").xtablegrid({
+                width: 200,
+                itemsPerLine: 2,
+                itemClassName : "t",
+                boxClassName : "a",
+                bullClassName : "e"
+            });
+        });
+
+      </script>
+  </body>
+</html>
